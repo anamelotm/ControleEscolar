@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="ISO-8859-1">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>                   
+        <link rel="stylesheet" href="Styles/menustyle.css">
+        <title> Capgemini - Controle Escolar</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+            .main iframe {
+                border: none;
+                position: absolute;
+                margin-top: 2px;
+                width:  100%;
+                height: 100%;
+            }
+        </style>
+    </head>
+         
+    <body>
+       
+        <!-- ESTRUTURA DO MENU -->
+
+        <div class="topnav" id="myTopnav">
+            <a href="index.html" class="active"> Início <i style="color:white"></i></a>   
+            <div class="topnav" id="myTopnav">
+            
+                <!-- ALUNO -->
+                <div class="dropdown">
+                    <button class="dropbtn">Aluno <i class="fa fa-caret-down"></i></button>
+                    <div class="dropdown-content"> 
+                        <a href="cadastraAluno.jsp" target="janela_prog"> Cadastrar </a>
+                        <a href="consultaAluno.jsp" target="janela_prog"> Consultar </a>
+                    </div> 
+                </div>            
+                
+                <!-- PROFESSOR -->
+                <div class="dropdown">
+                    <button class="dropbtn">Professor <i class="fa fa-caret-down"></i></button>
+                    <div class="dropdown-content"> 
+                        <a href="cadastraProfessor.jsp"            target="janela_prog"> Cadastrar </a>                        
+                        <a href="consultaProfessor.jsp"            target="janela_prog"> Consultar </a>                        
+                    </div> 
+                </div> 
+                
+                <!-- DISCIPLINA -->
+                <div class="dropdown">
+                    <button class="dropbtn">Disciplina <i class="fa fa-caret-down"></i></button>
+                    <div class="dropdown-content"> 
+                        <a href="cadastraDisciplina.jsp"            target="janela_prog"> Incluir </a>                        
+                        <a href="consultaDisciplina.jsp"            target="janela_prog"> Consultar </a>                        
+                    </div> 
+                </div> 
+                
+                <!-- MATRÍCULA -->
+                <div class="dropdown">
+                    <button class="dropbtn">Matrícula <i class="fa fa-caret-down"></i></button>
+                    <div class="dropdown-content"> 
+                        <a href="cadastraMatricula.jsp"            target="janela_prog"> Matricular </a>                        
+                        <a href="consultaMatriculaAluno.jsp"            target="janela_prog"> Consultar por aluno </a>
+                        <a href="consultaMatriculaDisciplina.jsp"            target="janela_prog"> Consultar por disciplina </a>                       
+                    </div> 
+                </div> 
+                
+                <!-- NOTAS -->
+                <div class="dropdown">
+                    <button class="dropbtn">Notas <i class="fa fa-caret-down"></i></button>
+                    <div class="dropdown-content"> 
+                        <a href="cadastraNotas.jsp"            target="janela_prog"> Incluir </a>                        
+                        <a href="consultaNotasAluno.jsp"            target="janela_prog"> Consultar por aluno </a>
+                        <a href="consultaNotasDisciplina.jsp"            target="janela_prog"> Consultar por disciplina</a>                        
+                    </div> 
+                </div> 
+            </div>   
+        </div>
+        
+       
+      
+        <!-- IFRAME ONDE ABREM AS TELAS DO SISTEMA -->
+        <div class="main">
+             <!-- logomarca no cenro da tela -->
+        
+            <iframe name="janela_prog" element.mozRequestFullScreen()></iframe>
+        </div>
+    </body>
+</html>
